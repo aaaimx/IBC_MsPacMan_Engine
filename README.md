@@ -11,7 +11,7 @@ De igual forma, esta proyecto se realizó con el IDE Eclipse, que cuenta con var
 ### Clonar el repositorio ###
 
 ```bash
-$ git clone 
+$ git clone https://github.com/aaaimx/IBC_MsPacMan_Engine.git
 ```
 
 ### Configuración ###
@@ -41,12 +41,12 @@ Estas reglas de la competición son necesarias para entender la estructura del p
 En el paquete por defecto de Eclipse, existe una clase llamada Evaluate.java, que se encarga de ejecutar las simulaciones y conseguir las puntuaciones de los comportamientos. Sólo es necesario ejecutarlo para su funcionamiento correcto (darle click al botón de "Run" en Eclipse). En este caso, está preconfigurado para enfrentar a los 3 mejores comportamientos de competiciones pasadas (ver archivo Resultados.txt). Cuando se ejecuta se puede ver cómo realiza las partidas automáticametne y al finalizar presenta una lista de puntuaciones en la consola/terminal.
 
 Si se desea incluir más comportamientos en la simulación, se puede editar el archivo config.properties, añadiendo el "fully qualified name"  de la clase que implementa el comportamiento a evaluar. Este nombre es del tipo (paquete de la clase + nombre de la clase), y se recomienda guardar tales comportamientos con la siguiente nomenclatura:
- * aaaimx.genXXXX.nombreDelComportamientoPacMan.MsPacMan
- * aaaimx.genXXXX.nombreDelComportamientoGhosts.Ghosts   
- s
+ * aaaimx.IBCXXXX.nombreDelComportamientoPacMan.MsPacMan
+ * aaaimx.IBCXXXX.nombreDelComportamientoGhosts.Ghosts   
+
 donde XXXX indica el año de los equipos en la competición y nombreDelComportamiento es una descripción muy breve de las caracteríticas más destacables del comportamiento. Dentro de estas carpetas/paquetes deben existir uno de dos archivos: MsPacMan.java o Ghosts.java. Ejemplos para estos nombres son:
- * aaaimx.gen2021.reactivePacMan.MsPacMan
- * aaaimx.gen2021.reactiveGhosts.Ghosts   
+ * aaaimx.IBC2021.reactivePacMan.MsPacMan
+ * aaaimx.IBC2021.reactiveGhosts.Ghosts   
  
 donde "reactive" indica la característica más importante del comportamiento, en este caso, una IA que sólo reacciona a los estímulos del entorno, sin pensar en movimientos futuros o aprender de alguna forma. 
 
